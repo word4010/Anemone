@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">                                                                     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header></header>
@@ -17,5 +20,38 @@
       </section>
     </main>
     <footer></footer>
+    <div class="modal">
+      <button class="modal_close"></button>
+      <h1 class="modal_title contact_section">Contact us</h1>
+      <p class="modal_text">
+        If you have any additional questions or you want to clarify something
+        before you make an order please fill in your contact details. We will
+        call you back.
+      </p>
+
+      <form class="modal_form">
+        <label class="modal_label">
+          <span class="modal_lable_text">Name</span>
+          <input
+            class="modal_input"
+            type="text"
+            required
+            placeholder="Your name"
+          />
+        </label>
+
+        <label class="modal_label">
+          <span class="modal_lable_text">Email</span>
+          <input
+            class="modal_input"
+            type="email"
+            required
+            placeholder="Your Email"
+          />
+        </label>
+
+        <button class="modal_button">send</button>
+      </form>
+    </div>
   </body>
 </html>
