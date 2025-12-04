@@ -1,1 +1,80 @@
-/*# sourceMappingURL=main.css.map */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  outline: 1px solid red;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 768px;
+    outline: 1px solid blue;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 24px;
+    padding-right: 24px;
+    outline: 1px solid green;
+  }
+}
+
+.delivery__item {
+  list-style-type: none;
+  counter-increment: my-counter;
+}
+
+.delivery__item::before {
+  content: counter(my-counter);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  margin-right: 10px;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
