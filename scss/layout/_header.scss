@@ -1,10 +1,27 @@
+
+.header{
+padding: 12px 0px;
+}
+
 .header_nav_list{
 @media screen and (max-width: 767px) {
  display: none;
 
 }
 }
-.flex{
+
+.header .flex{
 display: flex;
 justify-content: space-between;
 }
+.header_button_wrapper{
+display: flex;
+gap: 14px;
+}
+.burger_button{
+@media screen and (min-width: 768px) {
+ display: none;
+
+}    
+}
+
