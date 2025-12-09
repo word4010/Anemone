@@ -1,12 +1,15 @@
+
 .header{
 padding: 12px 0px;
 }
+
 .header_nav_list{
 @media screen and (max-width: 767px) {
  display: none;
 
 }
 }
+
 .header .flex{
 display: flex;
 justify-content: space-between;
@@ -21,3 +24,4 @@ gap: 14px;
 
 }    
 }
+

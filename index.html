@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" type="image/png" href="./public/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Anemone" />
+    <link rel="manifest" href="/public/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,10 +18,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/main.css">
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container flex">
         <nav class="header_nav">
            <a href="./index.html" class="logo">
             <img src="" alt="logo">
@@ -47,6 +55,44 @@
       <section class="hero">
         <p class="hero-text">flower studio</p>
         <h1 class="hero-title">ANEMONE</h1>
+      </section>
+      <section class="about">
+        <h2 class="about-title">ABOUT</h2>
+        <p>We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+      </section>
+        <section class="delivery">
+          <div class="container delivery__container">
+        
+            <h2 class="section__title delivery__title">Delivery</h2>
+        
+            <ol class="delivery__list">
+        
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  Choose your bouquet and make an order on website
+                </p>
+              </li>
+        
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  Wait for the call to clarify the details of the order. <br>
+                  You can pay online or to the courier
+                </p>
+              </li>
+        
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  Wait for the delivery at the selected time or pick up the order from the store
+                </p>
+              </li>
+        
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  Make someone happy or enjoy yourself
+                </p>
+              </li>  
+          </ol>
+        </div>
       </section>
       <section class="blog">
       <div class="container">
@@ -137,6 +183,26 @@
         </label>
 
         <button class="modal_button">send</button>
+      </form>
+    </div>
+     <div class="modal__subscribe">
+      <button class="modal__subscribe-close"></button>
+      <h1 class="modal__subscribe-title">Follow to our newsletter</h1>
+      <p class="modal__subscribe-text">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+      </p>
+      <form class="modal__subscribe-form">
+        <label class="modal__subscribe-label">
+          <span class="modal__subscribe-span">Name</span>
+          <input
+            class="modal__subscribe-input"
+            type="text"
+            required
+            placeholder="Your email"
+          />
+        </label>
+        <button class="modal__subscribe-button">Subscribe</button>
       </form>
     </div>
   </body>
