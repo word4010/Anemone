@@ -77,4 +77,29 @@ button {
   color: #fff;
   margin-right: 10px;
   font-weight: bold;
+}
+
+.header {
+  padding: 12px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .header_nav_list {
+    display: none;
+  }
+}
+.header .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_button_wrapper {
+  display: flex;
+  gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger_button {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
