@@ -1,27 +1,26 @@
 
-.header{
-padding: 12px 0px;
+.header {
+  padding: 12px 0px;
 }
 
-.header_nav_list{
 @media screen and (max-width: 767px) {
- display: none;
+  .header_nav_list {
+    display: none;
+  }
+}
 
-}
+.header .flex {
+  display: flex;
+  justify-content: space-between;
 }
 
-.header .flex{
-display: flex;
-justify-content: space-between;
+.header_button_wrapper {
+  display: flex;
+  gap: 14px;
 }
-.header_button_wrapper{
-display: flex;
-gap: 14px;
-}
-.burger_button{
+
 @media screen and (min-width: 768px) {
- display: none;
-
-}    
+  .burger_button {
+    display: none;
+  }
 }
-
