@@ -77,4 +77,54 @@ button {
   color: #fff;
   margin-right: 10px;
   font-weight: bold;
+}
+
+.header {
+  padding: 12px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .header_nav_list {
+    display: none;
+  }
+}
+.header .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_button_wrapper {
+  display: flex;
+  gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-close-button {
+  color: white;
+}
+
+.menu-close-icon {
+  stroke: white;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #3f51b5;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=main.css.map */
