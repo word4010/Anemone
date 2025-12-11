@@ -237,6 +237,9 @@ button {
   .menu-toggle {
     display: none;
   }
+  .menu-container {
+    display: none;
+  }
 }
 .menu-close-button {
   color: white;
