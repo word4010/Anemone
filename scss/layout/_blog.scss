@@ -1,0 +1,33 @@
+.slider{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+.slider__button-right{
+  transform: rotate(180deg);
+}
+
+.blog__text{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  padding-bottom: 32px;
+}
+
+.blog__button{
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 38px;
+  padding: 10px 40px;
+  width: 170px;
+  height: 40px;
+  background-color: #E86F54;
+}
