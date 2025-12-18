@@ -137,13 +137,18 @@ body {
 }
 
 .modal {
-  position: relative;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 272px;
   padding: 28px 16px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 480px;
+    padding: 48px 32px;
+  }
 }
 
 .modal_title {
@@ -153,6 +158,12 @@ body {
   color: #000;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .modal_title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
 
 .modal_text {
   font-family: var(--font-family);
@@ -161,11 +172,22 @@ body {
   color: #5c5c5c;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .modal_text {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
 
 .modal_form {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+@media screen and (min-width: 768px) {
+  .modal_form {
+    gap: 24px;
+  }
 }
 
 .modal_label {
@@ -180,13 +202,29 @@ body {
   font-size: 10px;
   color: #5c5c5c;
 }
+@media screen and (min-width: 768px) {
+  .modal_lable_text {
+    font-size: 14px;
+  }
+}
 
 .modal_input {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: #5c5c5c;
   border: 1px solid #d7d7d7;
   border-radius: 4px;
   width: 240px;
   height: 35px;
   padding: 10px 12px;
+}
+@media screen and (min-width: 768px) {
+  .modal_input {
+    width: 416px;
+    height: 50px;
+    padding: 16px;
+  }
 }
 
 .modal_button {
@@ -205,6 +243,13 @@ body {
   background-color: #E86F54;
   width: 240px;
   height: 37px;
+}
+@media screen and (min-width: 768px) {
+  .modal_button {
+    font-size: 18px;
+    width: 416px;
+    height: 50px;
+  }
 }
 
 .modal_close {
@@ -379,7 +424,7 @@ body {
 
 .header {
   padding: 12px 0px;
-  background-color: aqua;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -387,14 +432,38 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .header_nav_list {
+    display: flex;
+    gap: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_nav {
+    gap: 80px;
+  }
+}
 .header .flex {
   display: flex;
   justify-content: space-between;
 }
 
+.header_nav {
+  display: flex;
+  align-items: center;
+  gap: 261px;
+}
+
 .header_button_wrapper {
   display: flex;
   gap: 14px;
+}
+
+.header_item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
 }
 
 /* =========================
