@@ -9,14 +9,37 @@
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+.header_nav_list{
+display: flex;
+gap: 48px;
 
+}
+
+}
+@media screen and (max-width: 768px) {
+.header_nav{
+gap: 80px;
+}
+
+}
 .header .flex {
   display: flex;
   justify-content: space-between;
 }
-
+.header_nav{
+display: flex;
+align-items: center;
+gap: 261px;
+}
 .header_button_wrapper {
   display: flex;
   gap: 14px;
 }
 
+.header_item{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #000;
+}
