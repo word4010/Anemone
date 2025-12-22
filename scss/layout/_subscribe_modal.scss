@@ -56,7 +56,7 @@
   }
 }
 
-.modal__subscribe-title::before {
+.modal__subscribe::before {
   content: "";
   background-image: url("../img/blog/blog_modal_mob_1x.jpg");
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@
   background-size: cover;
   display: block;
   width: 272px;
-  height: 121px;
+  height: 120px;
   margin-bottom: 20px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -74,7 +74,7 @@
   @media (min-width: 768px) {
     background-image: url("../img/blog/blog_modal_tab_1x.jpg");
     width: 588px;
-    height: 271px;
+    height: 270px;
     margin-bottom: 30px;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -83,9 +83,10 @@
   }
   }
   @media (min-width: 1280px) {
+    display: flex;
     background-image: url("../img/blog/blog_modal_desk_1x.jpg");
     width: 428px;
-    height: 528px;
+    height: 530px;
     margin-bottom: 30px;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),

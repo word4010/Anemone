@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
       rel="icon"
       type="image/png"
       href="./public/favicon-96x96.png"
@@ -36,11 +40,11 @@
     <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
-   <header class="header">
+    <header class="header">
       <div class="container flex">
         <nav class="header_nav">
           <a href="./index.html" class="logo">
-           <svg class="logo" width="46" height="36">
+            <svg class="logo" width="46" height="36">
               <use href="./img/symbol-defs.svg#icon-logo"></use>
             </svg>
           </a>
@@ -68,10 +72,12 @@
               <use href="./img/symbol-defs.svg#icon-tel"></use>
             </svg>
           </button>
-          <button  class="menu-toggle js-open-menu"
+          <button
+            class="menu-toggle js-open-menu"
             aria-expanded="false"
-            aria-controls="mobile-menu">
-           <svg width="18" height="16">
+            aria-controls="mobile-menu"
+          >
+            <svg width="18" height="16">
               <use href="./img/symbol-defs.svg#icon-burger"></use>
             </svg>
           </button>
@@ -85,104 +91,171 @@
       </section>
       <section class="about section">
         <div class="container">
-        <h2 class="about-title section_title">ABOUT</h2>
-        <p>We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+          <h2 class="about-title section_title">ABOUT</h2>
+          <p>
+            We are a minimalistic flower studio. We love people and flowers.
+            Therefore, every day we give people the beauty and joy creating
+            stylish and modern masterpieces. Every bouquet we create is unique
+            as you are.
+          </p>
         </div>
       </section>
-        <section class="delivery section">
-          <div class="container delivery__container">
-        
-            <h2 class="section__title delivery__title section_title">Delivery</h2>
-        
-            <ol class="delivery__list">
-        
-              <li class="delivery__item">
-                <p class="delivery__text">
-                  Choose your bouquet and make an order on website
-                </p>
-              </li>
-        
-              <li class="delivery__item">
-                <p class="delivery__text">
-                  Wait for the call to clarify the details of the order. <br>
-                  You can pay online or to the courier
-                </p>
-              </li>
-        
-              <li class="delivery__item">
-                <p class="delivery__text">
-                  Wait for the delivery at the selected time or pick up the order from the store
-                </p>
-              </li>
-        
-              <li class="delivery__item">
-                <p class="delivery__text">
-                  Make someone happy or enjoy yourself
-                </p>
-              </li>  
+      <section class="delivery section">
+        <div class="container delivery__container">
+          <h2 class="section__title delivery__title section_title">Delivery</h2>
+
+          <ol class="delivery__list">
+            <li class="delivery__item">
+              <p class="delivery__text">
+                Choose your bouquet and make an order on website
+              </p>
+            </li>
+
+            <li class="delivery__item">
+              <p class="delivery__text">
+                Wait for the call to clarify the details of the order. <br />
+                You can pay online or to the courier
+              </p>
+            </li>
+
+            <li class="delivery__item">
+              <p class="delivery__text">
+                Wait for the delivery at the selected time or pick up the order
+                from the store
+              </p>
+            </li>
+
+            <li class="delivery__item">
+              <p class="delivery__text">Make someone happy or enjoy yourself</p>
+            </li>
           </ol>
         </div>
       </section>
       <section class="blog section">
-      <div class="container">
-        <h2 class="blog__title section_title">BLOG</h2>
-        <div class="slider">
-          <button class="slider__button-left">
-            <img src="./img/symbol-defs.svg#icon-arrow-left" alt="arrow" />
-          </button>
-          <div class="slider__flower">1</div>
-          <div class="slider__flower">2</div>
-          <div class="slider__flower">3</div>
-          <div class="slider__flower">4</div>
-          <div class="slider__flower">5</div>
-          <div class="slider__flower">6</div>
-          <button class="slider__button-right">
-            <img src="./img/symbol-defs.svg#icon-arrow-right" alt="arrow" />
-          </button>
-          <!--<img
-            class="slide"
-            srcset="
-            ./img/blog_green_mob_1x.jpg 122w, 
-            ./img/blog_green_mob_2x.jpg 244w,
-            ./img/blog_green_tab_1x.jpg 287w, 
-            ./img/blog_green_tab_2x.jpg 574w,
-            ./img/blog_green_desk_1x.jpg 315w, 
-            ./img/blog_green_desk_2x.jpg 630w"
-            sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
-            src="./img/blog_green_mob_1x.jpg"
-            alt="slide"
-          />
-          <img
-            class="slide"
-            srcset="
-            ./img/blog_coral_mob_1x.jpg 153w, 
-            ./img/blog_coral_mob_2x.jpg 306w,
-            ./img/blog_coral_tab_1x.jpg 344w, 
-            ./img/blog_coral_tab_2x.jpg 688w,
-            ./img/blog_coral_desk_1x.jpg 390w, 
-            ./img/blog_coral_desk_2x.jpg 780w"
-            sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 153px, 100vw"
-            src="./img/blog_coral_mob_1x.jpg"
-            alt="slide"
-          />
-          <img
-            class="slide"
-            srcset="
-            ./img/blog_blue_mob_1x.jpg 122w, 
-            ./img/blog_blue_mob_2x.jpg 244w,
-            ./img/blog_blue_tab_1x.jpg 287w, 
-            ./img/blog_blue_tab_2x.jpg 574w,
-            ./img/blog_blue_desk_1x.jpg 315w, 
-            ./img/blog_blue_desk_2x.jpg 630w"
-            sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
-            src="./img/blog_blue_mob_1x.jpg"
-            alt="slide"
-          />-->
+        <div class="container">
+          <h2 class="blog__title section_title">BLOG</h2>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="slide"
+                  srcset="
+                    ./img/blog/blog_green_mob_1x.jpg  122w,
+                    ./img/blog/blog_green_mob_2x.jpg  244w,
+                    ./img/blog/blog_green_tab_1x.jpg  287w,
+                    ./img/blog/blog_green_tab_2x.jpg  574w,
+                    ./img/blog/blog_green_desk_1x.jpg 315w,
+                    ./img/blog/blog_green_desk_2x.jpg 630w
+                  "
+                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
+                  src="./img/blog/blog_green_mob_1x.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="slide"
+                  srcset="
+                    ./img/blog/blog_coral_mob_1x.jpg  153w,
+                    ./img/blog/blog_coral_mob_2x.jpg  306w,
+                    ./img/blog/blog_coral_tab_1x.jpg  344w,
+                    ./img/blog/blog_coral_tab_2x.jpg  688w,
+                    ./img/blog/blog_coral_desk_1x.jpg 390w,
+                    ./img/blog/blog_coral_desk_2x.jpg 780w
+                  "
+                  sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 153px, 100vw"
+                  src="./img/blog/blog_coral_mob_1x.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="slide"
+                  srcset="
+                    ./img/blog/blog_blue_mob_1x.jpg  122w,
+                    ./img/blog/blog_blue_mob_2x.jpg  244w,
+                    ./img/blog/blog_blue_tab_1x.jpg  287w,
+                    ./img/blog/blog_blue_tab_2x.jpg  574w,
+                    ./img/blog/blog_blue_desk_1x.jpg 315w,
+                    ./img/blog/blog_blue_desk_2x.jpg 630w
+                  "
+                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
+                  src="./img/blog/blog_blue_mob_1x.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="slide"
+                  srcset="
+                    ./img/blog/blog_mix_mob_1x.jpg  122w,
+                    ./img/blog/blog_mix_mob_2x.jpg  244w,
+                    ./img/blog/blog_mix_tab_1x.jpg  287w,
+                    ./img/blog/blog_mix_tab_2x.jpg  574w,
+                    ./img/blog/blog_mix_desk_1x.jpg 315w,
+                    ./img/blog/blog_mix_desk_2x.jpg 630w
+                  "
+                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
+                  src="./img/blog/blog_mix_mob_1x.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="slide"
+                  srcset="
+                    ./img/blog/blog_orange_mob_1x.jpg  122w,
+                    ./img/blog/blog_orange_mob_2x.jpg  244w,
+                    ./img/blog/blog_orange_tab_1x.jpg  287w,
+                    ./img/blog/blog_orange_tab_2x.jpg  574w,
+                    ./img/blog/blog_orange_desk_1x.jpg 315w,
+                    ./img/blog/blog_orange_desk_2x.jpg 630w
+                  "
+                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
+                  src="./img/blog/blog_orange_mob_1x.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="slide"
+                  srcset="
+                    ./img/blog/blog_white_mob_1x.jpg  122w,
+                    ./img/blog/blog_white_mob_2x.jpg  244w,
+                    ./img/blog/blog_white_tab_1x.jpg  287w,
+                    ./img/blog/blog_white_tab_2x.jpg  574w,
+                    ./img/blog/blog_white_desk_1x.jpg 315w,
+                    ./img/blog/blog_white_desk_2x.jpg 630w
+                  "
+                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
+                  src="./img/blog/blog_white_mob_1x.jpg"
+                  alt="slide"
+                />
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <button class="slider__button-left">
+                  <img
+                    src="./img/symbol-defs.svg#icon-arrow-left"
+                    alt="arrow"
+                  />
+                </button>
+              </div>
+              <div class="swiper-button-next">
+                <button class="slider__button-right">
+                  <img
+                    src="./img/symbol-defs.svg#icon-arrow-right"
+                    alt="arrow"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="blog__text">Follow to our newsletter</p>
+          <button class="blog__button" data-modal-open>Subscribe</button>
         </div>
-        <p class="blog__text">Follow to our newsletter</p>
-        <button class="blog__button" data-modal-open>Subscribe</button>
-      </div>
-    </section>
+      </section>
     </main>
     <footer></footer>
     <div class="modal">
@@ -244,19 +317,21 @@
       </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-close-button js-close-menu">
-               <svg class="menu-close-icon" width="24" height="24">
-              <use href="./img/symbol-defs.svg#icon-close-button"></use>
-            </svg>
-              </button>
-        <ul class="mobile-menu">
+      <button class="menu-close-button js-close-menu">
+        <svg class="menu-close-icon" width="24" height="24">
+          <use href="./img/symbol-defs.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
         <li><a href="./index.html" class="link">Anemone</a></li>
         <li><a href="./index.html" class="link">About us</a></li>
         <li><a href="./index.html" class="link">Store</a></li>
         <li><a href="./index.html" class="link">Delivery</a></li>
         <li><a href="./index.html" class="link">Blog</a></li>
       </ul>
-      </div>
-      <script src="./js/mobile_menu.js"></script>
+    </div>
+    <script src="./js/mobile_menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
