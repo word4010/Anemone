@@ -37,14 +37,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./scss/main.css" />
+     <link rel="stylesheet" href="./css/main.min.css" /> 
   </head>
   <body>
     <header class="header">
       <div class="container flex">
         <nav class="header_nav">
           <a href="./index.html" class="logo">
-            <svg class="logo" width="46" height="36">
+           <svg class="logo" width="73" height="58">
               <use href="./img/symbol-defs.svg#icon-logo"></use>
             </svg>
           </a>
@@ -82,52 +82,53 @@
             </svg>
           </button>
         </div>
+</header>
+  <main>
+   <section class="hero">
+  <p class="hero-text">flower<br>studio</p>
+  <p class="hero-shop">shop now</p>
+  <h1 class="hero-title">ANEMONE</h1>
+</section>
+    <section class="about section">
+      <div class="container">
+        <h2 class="about-title section_title">ABOUT</h2>
+
+        <p>We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the
+          beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
       </div>
-    </header>
-    <main>
-      <section class="hero section">
-        <p class="hero-text">flower studio</p>
-        <h1 class="hero-title">ANEMONE</h1>
-      </section>
-      <section class="about section">
-        <div class="container">
-          <h2 class="about-title section_title">ABOUT</h2>
-          <p>
-            We are a minimalistic flower studio. We love people and flowers.
-            Therefore, every day we give people the beauty and joy creating
-            stylish and modern masterpieces. Every bouquet we create is unique
-            as you are.
-          </p>
-        </div>
-      </section>
-      <section class="delivery section">
-        <div class="container delivery__container">
-          <h2 class="section__title delivery__title section_title">Delivery</h2>
-
-          <ol class="delivery__list">
-            <li class="delivery__item">
-              <p class="delivery__text">
-                Choose your bouquet and make an order on website
-              </p>
-            </li>
-
-            <li class="delivery__item">
-              <p class="delivery__text">
-                Wait for the call to clarify the details of the order. <br />
-                You can pay online or to the courier
-              </p>
-            </li>
-
-            <li class="delivery__item">
-              <p class="delivery__text">
-                Wait for the delivery at the selected time or pick up the order
-                from the store
-              </p>
-            </li>
-
-            <li class="delivery__item">
-              <p class="delivery__text">Make someone happy or enjoy yourself</p>
-            </li>
+    </section>
+        <section class="delivery section">
+          <div class="container delivery__container">
+        
+            <h2 class="section__title delivery__title section_title">Delivery</h2>
+        
+            <ol class="delivery__list">
+        
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  Choose your bouquet and make an order on website
+                </p>
+              </li>
+        
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  Wait for the call to clarify the details of the order.
+                  You can pay online or to the courier
+                </p>
+              </li>
+        
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  Wait for the delivery at the selected time or pick up
+                  the order from the store
+                </p>
+              </li>
+        
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  Make someone happy or enjoy yourself
+                </p>
+              </li>  
           </ol>
         </div>
       </section>
@@ -266,27 +267,16 @@
         before you make an order please fill in your contact details. We will
         call you back.
       </p>
+    <form class="modal_form">
+      <label class="modal_label">
+        <span class="modal_lable_text">Name</span>
+        <input class="modal_input" type="text" required placeholder="Your name" />
+      </label>
 
-      <form class="modal_form">
-        <label class="modal_label">
-          <span class="modal_lable_text">Name</span>
-          <input
-            class="modal_input"
-            type="text"
-            required
-            placeholder="Your name"
-          />
-        </label>
-
-        <label class="modal_label">
-          <span class="modal_lable_text">Email</span>
-          <input
-            class="modal_input"
-            type="email"
-            required
-            placeholder="Your Email"
-          />
-        </label>
+      <label class="modal_label">
+        <span class="modal_lable_text">Email</span>
+        <input class="modal_input" type="email" required placeholder="Your Email" />
+      </label>
 
         <button class="modal_button">send</button>
       </form>
@@ -335,3 +325,39 @@
     <script src="./js/swiper.js"></script>
   </body>
 </html>
+      <button class="modal_button">send</button>
+    </form>
+  </div>
+  <div class="modal__subscribe">
+    <button class="modal__subscribe-close"></button>
+    <h1 class="modal__subscribe-title">Follow to our newsletter</h1>
+    <p class="modal__subscribe-text">
+      Be the first to get exclusive offers and the latest news on our product
+      directly in your box.
+    </p>
+    <form class="modal__subscribe-form">
+      <label class="modal__subscribe-label">
+        <span class="modal__subscribe-span">Name</span>
+        <input class="modal__subscribe-input" type="text" required placeholder="Your email" />
+      </label>
+      <button class="modal__subscribe-button">Subscribe</button>
+    </form>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-close-button js-close-menu">
+      <svg class="menu-close-icon" width="24" height="24">
+        <use href="./img/symbol-defs.svg#icon-close-button"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="./index.html" class="link">Anemone</a></li>
+      <li><a href="./index.html" class="link">About us</a></li>
+      <li><a href="./index.html" class="link">Store</a></li>
+      <li><a href="./index.html" class="link">Delivery</a></li>
+      <li><a href="./index.html" class="link">Blog</a></li>
+    </ul>
+  </div>
+  <script src="./js/mobile_menu.js"></script>
+</body>
+</html>
+

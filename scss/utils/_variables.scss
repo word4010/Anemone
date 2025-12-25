@@ -1,0 +1,25 @@
+/* CSS Variables */
+:root {
+    /* Font */
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Inter", sans-serif;
+
+    /* Colors */
+    --color-text-primary: #000000;
+    --color-text-secondary: #666666;
+
+    --color-background-primary: #ffffff;
+
+    --color-button-bg: #E86F54;
+}
+
+/* SCSS Variables */
+$font-family: "Montserrat", sans-serif;
+$second-family: "Inter", sans-serif;
+
+$color-text-primary: #000000;
+$color-text-secondary: #666666;
+
+$color-bg-primary: #ffffff;
+
+$color-button-bg: #E86F54;

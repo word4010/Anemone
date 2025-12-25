@@ -1,0 +1,77 @@
+
+/* =========================
+   HERO — MOBILE (FIGMA)
+   ========================= */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: pink;
+  overflow: hidden;
+    
+  /* два фони: квітка + овал */
+  background-image:
+    url('../img/hero-flower.png'),
+    url('../img/hero-oval.png');
+
+  background-repeat: no-repeat, no-repeat;
+
+  background-size:
+    200px auto,   // квітка
+    240px 360px;  // овал
+
+  background-position:
+    center 120px, // квітка
+    center 100px; // овал
+}
+
+/* ===== RETINA (mobile) ===== */
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      url('../img/hero-flower@2x.png'),
+      url('../img/hero-oval@2x.png');
+  }
+}
+
+/* ===== flower studio (left) ===== */
+.hero-text {
+  position: absolute;
+  top: 160px;
+  left: 16px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #000;
+}
+
+/* ===== shop now (right) ===== */
+.hero-shop {
+  position: absolute;
+  top: 170px;
+  right: 16px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #000;
+
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
+/* ===== ANEMONE ===== */
+.hero-title {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  line-height: 1;
+
+  color: #000;
+}
