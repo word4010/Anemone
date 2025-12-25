@@ -1,18 +1,18 @@
-.swiper {
-  height: 200px;
+#swiper {
+  height: 181px;
   margin-right: 6px;
   margin-left: 6px;
 }
 
 .swiper-wrapper {
-  height: 200px;
+  height: 181px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 153px;
-  height: 200px;
+  height: 181px;
 }
 
 .swiper-button-prev,
@@ -40,7 +40,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .swiper {
+  #swiper {
     height: 398px;
     margin-right: -24px;
     margin-left: -24px;
@@ -62,7 +62,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper {
+  #swiper {
     height: 420px;
     margin-left: 0;
     margin-right: 0;

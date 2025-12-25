@@ -135,7 +135,7 @@
       <section class="blog section">
         <div class="container">
           <h2 class="blog__title section_title">BLOG</h2>
-          <div class="swiper">
+          <div id="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -254,7 +254,7 @@
             </div>
           </div>
           <p class="blog__text">Follow to our newsletter</p>
-          <button class="blog__button" data-modal-open>Subscribe</button>
+          <button class="blog__button" data-modal-subscribe-open>Subscribe</button>
         </div>
       </section>
     </main>
@@ -281,9 +281,9 @@
         <button class="modal_button">send</button>
       </form>
     </div>
-    <div class="-" data-modal>
+    <div class="backdrop is-hidden" data-modal-subscribe>
       <div class="modal__subscribe">
-        <button class="modal__subscribe-close" data-modal-close>
+        <button class="modal__subscribe-close" data-modal-subscribe-close>
           <svg><use href="./img/symbol-defs.svg#icon-close"></use></svg>
         </button>
         <h1 class="modal__subscribe-title">Follow to our newsletter</h1>
@@ -323,41 +323,7 @@
     <script src="./js/mobile_menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/subscribe-modal.js"></script>
   </body>
-</html>
-      <button class="modal_button">send</button>
-    </form>
-  </div>
-  <div class="modal__subscribe">
-    <button class="modal__subscribe-close"></button>
-    <h1 class="modal__subscribe-title">Follow to our newsletter</h1>
-    <p class="modal__subscribe-text">
-      Be the first to get exclusive offers and the latest news on our product
-      directly in your box.
-    </p>
-    <form class="modal__subscribe-form">
-      <label class="modal__subscribe-label">
-        <span class="modal__subscribe-span">Name</span>
-        <input class="modal__subscribe-input" type="text" required placeholder="Your email" />
-      </label>
-      <button class="modal__subscribe-button">Subscribe</button>
-    </form>
-  </div>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-close-button js-close-menu">
-      <svg class="menu-close-icon" width="24" height="24">
-        <use href="./img/symbol-defs.svg#icon-close-button"></use>
-      </svg>
-    </button>
-    <ul class="mobile-menu">
-      <li><a href="./index.html" class="link">Anemone</a></li>
-      <li><a href="./index.html" class="link">About us</a></li>
-      <li><a href="./index.html" class="link">Store</a></li>
-      <li><a href="./index.html" class="link">Delivery</a></li>
-      <li><a href="./index.html" class="link">Blog</a></li>
-    </ul>
-  </div>
-  <script src="./js/mobile_menu.js"></script>
-</body>
 </html>
 
